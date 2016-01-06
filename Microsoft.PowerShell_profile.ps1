@@ -15,7 +15,6 @@ function Set-LocationWithGCI
 	)
 
 	Set-Location $path
-	# Get-ChildItem $path
 	ls
 }
 
