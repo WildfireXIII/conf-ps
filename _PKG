@@ -1,0 +1,3 @@
+install=Microsoft.PowerShell_profile.ps1>$CONF_DIR
+remove=Microsoft.PowerShell_profile.ps1<$CONF_DIR
+data=NONE
