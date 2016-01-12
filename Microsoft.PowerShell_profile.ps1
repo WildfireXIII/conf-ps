@@ -29,3 +29,13 @@ $DATA_DIR = "$env:DATA_DIR"
 $lines = Get-Content $DATA_DIR\extras\ascii\AsciiLogo.txt
 
 echo "`n`n$lines`n`n"
+
+# echo out useful data
+$computerName = $env:computername
+$currentDate = Get-Date -format "dddd %M/dd/yyyy"
+$currentTime = Get-Date -format "%H:mm \(%h:mm\)"
+
+echo "`tComputer: `t$computerName"
+echo "`tDate: `t$currentDate"
+echo "`tTime: `t$currentTime"
+echo "`n"
