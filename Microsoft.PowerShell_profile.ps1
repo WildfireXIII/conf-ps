@@ -35,7 +35,10 @@ $computerName = $env:computername
 $currentDate = Get-Date -format "dddd %M/dd/yyyy"
 $currentTime = Get-Date -format "%H:mm \(%h:mm\)"
 
-echo "`tComputer: `t$computerName"
-echo "`tDate: `t`t$currentDate"
-echo "`tTime: `t`t$currentTime"
+echo -nonewline "`tComputer: "
+echo "`t$computerName" -ForegroundColor White
+echo -nonewline "`tDate: "
+echo "`t`t$currentDate" -ForegroundColor White
+echo -nonewline "`tTime: "
+echo "`t`t$currentTime" -ForegroundColor White
 echo "`n"
