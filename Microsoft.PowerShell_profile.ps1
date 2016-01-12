@@ -36,6 +36,6 @@ $currentDate = Get-Date -format "dddd %M/dd/yyyy"
 $currentTime = Get-Date -format "%H:mm \(%h:mm\)"
 
 echo "`tComputer: `t$computerName"
-echo "`tDate: `t$currentDate"
-echo "`tTime: `t$currentTime"
+echo "`tDate: `t`t$currentDate"
+echo "`tTime: `t`t$currentTime"
 echo "`n"
